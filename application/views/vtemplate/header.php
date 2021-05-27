@@ -20,14 +20,16 @@
   <link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/jqvmap/jqvmap.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/adminlte.min.css">
-  <!-- My style -->
-  <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/mystyle.css">
   <!-- overlayScrollbars -->
   <link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
   <!-- Daterange picker -->
   <link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/daterangepicker/daterangepicker.css">
   <!-- summernote -->
   <link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/summernote/summernote-bs4.min.css">
+  <!-- BS Stepper -->
+  <link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/bs-stepper/css/bs-stepper.min.css">
+  <!-- My style -->
+  <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/mystyle.css">
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">

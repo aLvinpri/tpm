@@ -62,7 +62,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="<?php echo base_url(); ?>pages/wo_input" class="nav-link
+                <a href="<?php echo base_url(); ?>workorder/input" class="nav-link
                 <?php if ($activelink == "Input Work Order") {
                   echo ' active';
                 } ?>">
@@ -71,7 +71,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="<?php echo base_url(); ?>pages/wo_pengerjaan" class="nav-link
+                <a href="<?php echo base_url(); ?>workorder/pengerjaan" class="nav-link
                 <?php if ($activelink == "Input Pengerjaan Work Order") {
                   echo ' active';
                 } ?>">

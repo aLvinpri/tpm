@@ -50,6 +50,10 @@
     <script src="<?php echo base_url(); ?>assets/js/demo.js"></script>
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
     <script src="<?php echo base_url(); ?>assets/js/pages/dashboard.js"></script>
+    <!-- BS-Stepper -->
+    <script src="<?php echo base_url(); ?>assets/plugins/bs-stepper/js/bs-stepper.min.js"></script>
+    <!-- MyScript -->
+    <script src="<?php echo base_url(); ?>assets/js/myscript.js"></script>
     </body>
 
     </html>
