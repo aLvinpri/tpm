@@ -10,70 +10,109 @@
             </h3>
           </div>
           <div class="card-body">
-            <div class="col-12">
-              <h5>Theme Colors</h5>
-            </div>
-            <!-- /.col-12 -->
+            <!-- Row Ebook -->
             <div class="row">
-              <div class="col-sm-4 col-md-2">
-                <h4 class="text-center">Primary</h4>
-
-                <div class="color-palette-set">
-                  <div class="bg-primary color-palette"><span>#007bff</span></div>
-                  <div class="bg-primary disabled color-palette"><span>Disabled</span></div>
+              <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch flex-column">
+                <div class="card bg-light d-flex flex-fill">
+                  <div class="card-header text-muted border-bottom-0">
+                    Ebook
+                  </div>
+                  <div class="card-body pt-0">
+                    <div class="row">
+                      <div class="col-7">
+                        <h2 class="lead"><b>User Guidence </b></h2>
+                        <p class="text-muted text-sm"><b>Deskripsi: </b> <br> Panduan Aplikasi Maintenance </p>
+                        <p class="text-muted text-sm"><b>Penulis: </b> Alfin Prnd </p>
+                        <p class="text-muted text-sm"><b>Tahun: </b> 2021 </p>
+                        <p class="text-muted text-sm"><b>Revisi: </b> 2 </p>
+                      </div>
+                      <div class="col-5 text-center">
+                        <img src="<?php echo base_url(); ?>assets/img/ebook/userguided.jpg" alt="Picture" class="img-circle img-fluid">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <div class="text-right">
+                      <a href="<?php echo base_url(); ?>assets/pdf/User-Guidence.pdf" target="_blank" class="btn btn-sm bg-teal">
+                        <i class="fas fa-comments"></i> Baca Online
+                      </a>
+                      <a href="<?php force_download('echo base_url();' . 'assets/pdf/User-Guidence.pdf', NULL); ?>" class="btn btn-sm btn-primary">
+                        <i class="fas fa-user"></i> View Profile
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <!-- /.col -->
-              <div class="col-sm-4 col-md-2">
-                <h4 class="text-center">Secondary</h4>
-
-                <div class="color-palette-set">
-                  <div class="bg-secondary color-palette"><span>#6c757d</span></div>
-                  <div class="bg-secondary disabled color-palette"><span>Disabled</span></div>
+              <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch flex-column">
+                <div class="card bg-light d-flex flex-fill">
+                  <div class="card-header text-muted border-bottom-0">
+                    Ebook
+                  </div>
+                  <div class="card-body pt-0">
+                    <div class="row">
+                      <div class="col-7">
+                        <h2 class="lead"><b>Documentation System </b></h2>
+                        <p class="text-muted text-sm"><b>Deskripsi: </b> <br> Dokumentasi Sistem Maintenance </p>
+                        <p class="text-muted text-sm"><b>Penulis: </b> Alfin Prnd </p>
+                        <p class="text-muted text-sm"><b>Tahun: </b> 2021 </p>
+                        <p class="text-muted text-sm"><b>Revisi: </b> 2 </p>
+                      </div>
+                      <div class="col-5 text-center">
+                        <img src="<?php echo base_url(); ?>assets/img/ebook/doc.png" alt="Picture" class="img-circle img-fluid">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <div class="text-right">
+                      <a href="<?php echo base_url(); ?>assets/pdf/Documentation-System.pdf" target="_blank" class="btn btn-sm bg-teal">
+                        <i class="fas fa-comments"></i> Baca Online
+                      </a>
+                      <a href="#" class="btn btn-sm btn-primary">
+                        <i class="fas fa-user"></i> View Profile
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <!-- /.col -->
-              <div class="col-sm-4 col-md-2">
-                <h4 class="text-center">Info</h4>
-
-                <div class="color-palette-set">
-                  <div class="bg-info color-palette"><span>#17a2b8</span></div>
-                  <div class="bg-info disabled color-palette"><span>Disabled</span></div>
+              <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch flex-column">
+                <div class="card bg-light d-flex flex-fill">
+                  <div class="card-header text-muted border-bottom-0">
+                    Ebook
+                  </div>
+                  <div class="card-body pt-0">
+                    <div class="row">
+                      <div class="col-7">
+                        <h2 class="lead"><b>WO Formating </b></h2>
+                        <p class="text-muted text-sm"><b>Deskripsi: </b> <br> Format Work Order</p>
+                        <p class="text-muted text-sm"><b>Penulis: </b> Alfin Prnd </p>
+                        <p class="text-muted text-sm"><b>Tahun: </b> 2021 </p>
+                        <p class="text-muted text-sm"><b>Revisi: </b> 2 </p>
+                      </div>
+                      <div class="col-5 text-center">
+                        <img src="<?php echo base_url(); ?>assets/img/ebook/wo.png" target="_blank" alt="Picture" class="img-circle img-fluid">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <div class="text-right">
+                      <a href="<?php echo base_url(); ?>assets/pdf/Work-Order.pdf" class="btn btn-sm bg-teal">
+                        <i class="fas fa-comments"></i> Baca Online
+                      </a>
+                      <a href="#" class="btn btn-sm btn-primary">
+                        <i class="fas fa-user"></i> View Profile
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <!-- /.col -->
-              <div class="col-sm-4 col-md-2">
-                <h4 class="text-center">Success</h4>
-
-                <div class="color-palette-set">
-                  <div class="bg-success color-palette"><span>#28a745</span></div>
-                  <div class="bg-success disabled color-palette"><span>Disabled</span></div>
-                </div>
-              </div>
-              <!-- /.col -->
-              <div class="col-sm-4 col-md-2">
-                <h4 class="text-center bg-warning">Warning</h4>
-
-                <div class="color-palette-set">
-                  <div class="bg-warning color-palette"><span>#ffc107</span></div>
-                  <div class="bg-warning disabled color-palette"><span>Disabled</span></div>
-                </div>
-              </div>
-              <!-- /.col -->
-              <div class="col-sm-4 col-md-2">
-                <h4 class="text-center">Danger</h4>
-
-                <div class="color-palette-set">
-                  <div class="bg-danger color-palette"><span>#dc3545</span></div>
-                  <div class="bg-danger disabled color-palette"><span>Disabled</span></div>
-                </div>
-              </div>
-              <!-- /.col -->
             </div>
           </div>
-          <!-- /.card-body -->
+          <!-- End row Ebook -->
         </div>
-        <!-- /.card -->
+      </div>
+      <!-- /.card-body -->
+      </div>
+      <!-- /.card -->
       </div>
       <!-- /.container -->
     </section>

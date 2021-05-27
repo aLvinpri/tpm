@@ -23,6 +23,7 @@ class Pages extends CI_Controller
     {
         $data['judul'] = 'TPM - User Guidence';
         $data['activelink'] = 'User Guidence';
+        $this->load->helper('download');
         $this->load->view('vtemplate/header', $data);
         $this->load->view('vtemplate/navbar');
         $this->load->view('vtemplate/sidebar', $data);
