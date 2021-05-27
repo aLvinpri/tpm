@@ -23,21 +23,38 @@ class Pages extends CI_Controller
     {
         $data['judul'] = 'TPM - User Guidence';
         $data['activelink'] = 'User Guidence';
-        $this->load->helper('download');
+        $data['ebookname'] = '';
         $this->load->view('vtemplate/header', $data);
         $this->load->view('vtemplate/navbar');
         $this->load->view('vtemplate/sidebar', $data);
         $this->load->view('vhome/userguidence');
         $this->load->view('vtemplate/footer');
     }
-    public function inputwo()
+    public function download()
+    {
+        $this->load->helper('download');
+        $ebookname = $this->uri->segment(3);
+
+        force_download('assets/pdf/' . $ebookname, NULL);
+    }
+    public function wo_input()
     {
         $data['judul'] = 'TPM - Input WO';
         $data['activelink'] = 'Input Work Order';
         $this->load->view('vtemplate/header', $data);
         $this->load->view('vtemplate/navbar');
         $this->load->view('vtemplate/sidebar', $data);
-        $this->load->view('vpages/userguidence');
+        $this->load->view('vpages/wo_input');
+        $this->load->view('vtemplate/footer');
+    }
+    public function wo_pengerjaan()
+    {
+        $data['judul'] = 'TPM - Input Pengerjaan WO';
+        $data['activelink'] = 'Input Pengerjaan Work Order';
+        $this->load->view('vtemplate/header', $data);
+        $this->load->view('vtemplate/navbar');
+        $this->load->view('vtemplate/sidebar', $data);
+        $this->load->view('vpages/wo_pengerjaan');
         $this->load->view('vtemplate/footer');
     }
     public function fixedfooter()

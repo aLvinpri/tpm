@@ -34,13 +34,11 @@
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
-               with font-awesome or any other icon font library -->
+              with font-awesome or any other icon font library -->
           <li class="nav-item">
             <a href="<?php echo base_url(); ?>pages/userguidence" class="nav-link 
             <?php if ($activelink == "User Guidence") {
               echo ' active';
-            } else {
-              echo '';
             } ?>">
               <i class="nav-icon fas fa-book"></i>
               <p>
@@ -48,8 +46,14 @@
               </p>
             </a>
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
+          <li class="nav-item
+          <?php if ($activelink == "Input Work Order" | $activelink == "Input Pengerjaan Work Order") {
+            echo ' menu-open';
+          } ?>">
+            <a href="#" class="nav-link 
+            <?php if ($activelink == "Input Work Order" | $activelink == "Input Pengerjaan Work Order") {
+              echo ' active';
+            } ?>">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Work Order
@@ -58,18 +62,19 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="./index.html" class="nav-link
+                <a href="<?php echo base_url(); ?>pages/wo_input" class="nav-link
                 <?php if ($activelink == "Input Work Order") {
                   echo ' active';
-                } else {
-                  echo '';
                 } ?>">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Input WO</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="./index2.html" class="nav-link">
+                <a href="<?php echo base_url(); ?>pages/wo_pengerjaan" class="nav-link
+                <?php if ($activelink == "Input Pengerjaan Work Order") {
+                  echo ' active';
+                } ?>">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Input Pengerjaan WO</p>
                 </a>

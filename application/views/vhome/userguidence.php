@@ -36,7 +36,7 @@
                       <a href="<?php echo base_url(); ?>assets/pdf/User-Guidence.pdf" target="_blank" class="btn btn-sm bg-teal">
                         <i class="fas fa-comments"></i> Baca Online
                       </a>
-                      <a href="<?php force_download('echo base_url();' . 'assets/pdf/User-Guidence.pdf', NULL); ?>" class="btn btn-sm btn-primary">
+                      <a href="<?php echo base_url('pages/download/User-Guidence.pdf'); ?>" class="btn btn-sm btn-primary">
                         <i class="fas fa-user"></i> View Profile
                       </a>
                     </div>
@@ -67,7 +67,7 @@
                       <a href="<?php echo base_url(); ?>assets/pdf/Documentation-System.pdf" target="_blank" class="btn btn-sm bg-teal">
                         <i class="fas fa-comments"></i> Baca Online
                       </a>
-                      <a href="#" class="btn btn-sm btn-primary">
+                      <a href="<?php echo base_url('pages/download/Documentation-System.pdf'); ?>" class="btn btn-sm btn-primary">
                         <i class="fas fa-user"></i> View Profile
                       </a>
                     </div>
@@ -98,7 +98,7 @@
                       <a href="<?php echo base_url(); ?>assets/pdf/Work-Order.pdf" class="btn btn-sm bg-teal">
                         <i class="fas fa-comments"></i> Baca Online
                       </a>
-                      <a href="#" class="btn btn-sm btn-primary">
+                      <a href="<?php echo base_url('pages/download/Work-Order.pdf'); ?>" class="btn btn-sm btn-primary">
                         <i class="fas fa-user"></i> View Profile
                       </a>
                     </div>
@@ -109,12 +109,7 @@
           </div>
           <!-- End row Ebook -->
         </div>
+        <!-- Container Fluid -->
       </div>
-      <!-- /.card-body -->
-      </div>
-      <!-- /.card -->
-      </div>
-      <!-- /.container -->
+      <!-- Section -->
     </section>
-    <!-- /.content-wrapper -->
-    </div>
