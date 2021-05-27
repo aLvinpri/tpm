@@ -1,31 +1,3 @@
-<body class="hold-transition sidebar-mini layout-fixed">
-<div class="wrapper">
-
-  <!-- Preloader -->
-  <div class="preloader flex-column justify-content-center align-items-center">
-    <img class="animation__shake" src="assets/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
-  </div>
-
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <div class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1 class="m-0">Dashboard</h1>
-          </div><!-- /.col -->
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Dashboard v1</li>
-            </ol>
-          </div><!-- /.col -->
-        </div><!-- /.row -->
-      </div><!-- /.container-fluid -->
-    </div>
-    <!-- /.content-header -->
-
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
@@ -118,10 +90,9 @@
               <div class="card-body">
                 <div class="tab-content p-0">
                   <!-- Morris chart - Sales -->
-                  <div class="chart tab-pane active" id="revenue-chart"
-                       style="position: relative; height: 300px;">
-                      <canvas id="revenue-chart-canvas" height="300" style="height: 300px;"></canvas>
-                   </div>
+                  <div class="chart tab-pane active" id="revenue-chart" style="position: relative; height: 300px;">
+                    <canvas id="revenue-chart-canvas" height="300" style="height: 300px;"></canvas>
+                  </div>
                   <div class="chart tab-pane" id="sales-chart" style="position: relative; height: 300px;">
                     <canvas id="sales-chart-canvas" height="300" style="height: 300px;"></canvas>
                   </div>
@@ -360,7 +331,7 @@
                       <i class="fas fa-ellipsis-v"></i>
                     </span>
                     <!-- checkbox -->
-                    <div  class="icheck-primary d-inline ml-2">
+                    <div class="icheck-primary d-inline ml-2">
                       <input type="checkbox" value="" name="todo1" id="todoCheck1">
                       <label for="todoCheck1"></label>
                     </div>
@@ -379,7 +350,7 @@
                       <i class="fas fa-ellipsis-v"></i>
                       <i class="fas fa-ellipsis-v"></i>
                     </span>
-                    <div  class="icheck-primary d-inline ml-2">
+                    <div class="icheck-primary d-inline ml-2">
                       <input type="checkbox" value="" name="todo2" id="todoCheck2" checked>
                       <label for="todoCheck2"></label>
                     </div>
@@ -395,7 +366,7 @@
                       <i class="fas fa-ellipsis-v"></i>
                       <i class="fas fa-ellipsis-v"></i>
                     </span>
-                    <div  class="icheck-primary d-inline ml-2">
+                    <div class="icheck-primary d-inline ml-2">
                       <input type="checkbox" value="" name="todo3" id="todoCheck3">
                       <label for="todoCheck3"></label>
                     </div>
@@ -411,7 +382,7 @@
                       <i class="fas fa-ellipsis-v"></i>
                       <i class="fas fa-ellipsis-v"></i>
                     </span>
-                    <div  class="icheck-primary d-inline ml-2">
+                    <div class="icheck-primary d-inline ml-2">
                       <input type="checkbox" value="" name="todo4" id="todoCheck4">
                       <label for="todoCheck4"></label>
                     </div>
@@ -427,7 +398,7 @@
                       <i class="fas fa-ellipsis-v"></i>
                       <i class="fas fa-ellipsis-v"></i>
                     </span>
-                    <div  class="icheck-primary d-inline ml-2">
+                    <div class="icheck-primary d-inline ml-2">
                       <input type="checkbox" value="" name="todo5" id="todoCheck5">
                       <label for="todoCheck5"></label>
                     </div>
@@ -443,7 +414,7 @@
                       <i class="fas fa-ellipsis-v"></i>
                       <i class="fas fa-ellipsis-v"></i>
                     </span>
-                    <div  class="icheck-primary d-inline ml-2">
+                    <div class="icheck-primary d-inline ml-2">
                       <input type="checkbox" value="" name="todo6" id="todoCheck6">
                       <label for="todoCheck6"></label>
                     </div>
@@ -536,22 +507,19 @@
               <div class="card-footer bg-transparent">
                 <div class="row">
                   <div class="col-4 text-center">
-                    <input type="text" class="knob" data-readonly="true" value="20" data-width="60" data-height="60"
-                           data-fgColor="#39CCCC">
+                    <input type="text" class="knob" data-readonly="true" value="20" data-width="60" data-height="60" data-fgColor="#39CCCC">
 
                     <div class="text-white">Mail-Orders</div>
                   </div>
                   <!-- ./col -->
                   <div class="col-4 text-center">
-                    <input type="text" class="knob" data-readonly="true" value="50" data-width="60" data-height="60"
-                           data-fgColor="#39CCCC">
+                    <input type="text" class="knob" data-readonly="true" value="50" data-width="60" data-height="60" data-fgColor="#39CCCC">
 
                     <div class="text-white">Online</div>
                   </div>
                   <!-- ./col -->
                   <div class="col-4 text-center">
-                    <input type="text" class="knob" data-readonly="true" value="30" data-width="60" data-height="60"
-                           data-fgColor="#39CCCC">
+                    <input type="text" class="knob" data-readonly="true" value="30" data-width="60" data-height="60" data-fgColor="#39CCCC">
 
                     <div class="text-white">In-Store</div>
                   </div>
@@ -609,5 +577,4 @@
       </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->
-  </div>
-
+    </div>
