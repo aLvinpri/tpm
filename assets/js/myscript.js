@@ -1,12 +1,21 @@
 $(function () {
   //Date and time picker
-  $('#reservationdatetime').datetimepicker({ icons: { time: 'far fa-clock' } });
+  $('#reservationdatetime').datetimepicker({
+    icons: { time: 'far fa-clock'},
+    format: 'YYYY-MM-DD HH:mm:ss'
+    });
   
   //Date and time picker
-  $('#reservationdatetime2').datetimepicker({ icons: { time: 'far fa-clock' } });
+  $('#reservationdatetime2').datetimepicker({
+    icons: { time: 'far fa-clock'},
+    format: 'YYYY-MM-DD HH:mm:ss'
+    });
 
   //Date and time picker
-  $('#reservationdatetime3').datetimepicker({ icons: { time: 'far fa-clock' } });
+  $('#reservationdatetime3').datetimepicker({
+    icons: { time: 'far fa-clock'},
+    format: 'YYYY-MM-DD HH:mm:ss'
+    });
 
 })
 // BS-Stepper Init

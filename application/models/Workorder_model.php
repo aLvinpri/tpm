@@ -14,16 +14,29 @@ class Workorder_model extends CI_model
         return $this->db->get('kar')->result_array();
     }
 
-    public function tambahDataWorkorder()
+    public function inputDataWo()
     {
         $data = [
-            "nama" => $this->input->post('nama', true),
-            "nrp" => $this->input->post('nrp', true),
-            "email" => $this->input->post('email', true),
-            "jurusan" => $this->input->post('jurusan', true)
+            "id_no" => "",
+            "id_wo" => $this->input->post('txtbag', true) . '/' . $this->input->post('txtlok', true) . '/' . $this->input->post('no', true),
+            "id_mesin" => $this->input->post('idmesin', true),
+            "id_lostime" => $this->input->post('txtlosstime', true),
+            "date_current" => $this->input->post('tgl_input', true),
+            "dibuat_oleh" => $this->input->post('txtdibuat', true),
+            "diterima_oleh" => $this->input->post('rd_diterima', true),
+            "problem" => $this->input->post('txtpermasalahan', true),
+            "penyebab" => $this->input->post('txtpenyebab', true),
+            "tindakan" => $this->input->post('txttindakan', true),
+            "tgl_dikerjakan" => $this->input->post('tgl_dikerjakan', true),
+            "diserahkan" => $this->input->post('txtdiserahkan', true),
+            "tgl_diserahkan" => $this->input->post('tgl_diserahkan', true),
+            "jenis_pekerjaan" => $this->input->post('txtjenis_pekerjaan', true),
+            "status_mesin" => $this->input->post('status', true),
+            "diterima" => $this->input->post('txtditerima', true),
+            "pelaksana" => $this->input->post('txtpelaksana', true)
         ];
 
-        $this->db->insert('Workorder', $data);
+        $this->db->insert('doc_wo', $data);
     }
 
     public function hapusDataWorkorder($id)
