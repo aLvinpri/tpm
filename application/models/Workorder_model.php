@@ -8,6 +8,12 @@ class Workorder_model extends CI_model
         return $this->db->get('mesin')->result_array();
     }
 
+    public function getPilihMaintenance()
+    {
+        $this->db->select('nama');
+        return $this->db->get('kar')->result_array();
+    }
+
     public function tambahDataWorkorder()
     {
         $data = [

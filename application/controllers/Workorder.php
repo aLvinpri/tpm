@@ -14,11 +14,30 @@ class Workorder extends CI_Controller
         $data['judul'] = 'TPM - Input WO';
         $data['activelink'] = 'Input Work Order';
         $data['pilihmesin'] = $this->Workorder_model->getPilihMesin();
+        $data['pilihmaintenance'] = $this->Workorder_model->getPilihMaintenance();
         $this->load->view('vtemplate/header', $data);
         $this->load->view('vtemplate/navbar');
         $this->load->view('vtemplate/sidebar', $data);
         $this->load->view('vpages/wo_input', $data);
         $this->load->view('vtemplate/footer');
+    }
+    public function tambah()
+    {
+        $data['judul'] = 'Form Tambah Data Mahasiswa';
+
+        $this->form_validation->set_rules('nama', 'Nama', 'required', array('required' => 'Nama Harus di isi'));
+        $this->form_validation->set_rules('nrp', 'NRP', 'required|numeric');
+        $this->form_validation->set_rules('email', 'Email', 'required|valid_email');
+
+        if ($this->form_validation->run() == false) {
+            $this->load->view('templates/header', $data);
+            $this->load->view('mahasiswa/tambah');
+            $this->load->view('templates/footer');
+        } else {
+            $this->Mahasiswa_model->tambahDataMahasiswa();
+            $this->session->set_flashdata('flash', 'Ditambahkan');
+            redirect('mahasiswa');
+        }
     }
     public function pengerjaan()
     {
@@ -27,7 +46,7 @@ class Workorder extends CI_Controller
         $this->load->view('vtemplate/header', $data);
         $this->load->view('vtemplate/navbar');
         $this->load->view('vtemplate/sidebar', $data);
-        $this->load->view('vpages/wo_pengerjaan');
+        $this->load->view('vpages/wo_pengerjaan', $data);
         $this->load->view('vtemplate/footer');
     }
 }

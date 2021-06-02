@@ -39,7 +39,6 @@ function MM_displayStatusMsg(msgStr) { //v1.0
             </tr>
             <tr>
               <td colspan="7">
-
                 <div align="center">
                   <p align="center">
                     <?php
