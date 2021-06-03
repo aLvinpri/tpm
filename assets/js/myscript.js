@@ -17,8 +17,29 @@ $(function () {
     format: 'YYYY-MM-DD HH:mm:ss'
     });
 
-})
+});
 // BS-Stepper Init
 document.addEventListener('DOMContentLoaded', function () {
   window.stepper = new Stepper(document.querySelector('.bs-stepper'))
+});
+
+const flashData = $('.flash-data').data('flashdata');
+
+if(flashData){
+  Swal.fire({
+    icon: 'success',
+    title: 'Berhasil',
+    text: 'WO Telah '/*  + flashData */
+  })
+};
+
+const tombol = document.querySelector('#tombol');
+console.log(tombol);
+
+tombol.addEventListener('click', function(){
+	Swal.fire({
+  icon: 'success',
+  title: 'Berhasil',
+  text: 'Something went wrong!'
 })
+});

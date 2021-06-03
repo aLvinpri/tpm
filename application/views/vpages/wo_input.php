@@ -38,6 +38,7 @@
                                         <!-- your steps content here -->
                                         <div id="step-1" class="content" role="tabpanel" aria-labelledby="step-1-trigger">
                                             <div class="container-fluid">
+                                                <div class="flash-data" data-flashdata="<?php echo $this->session->flashdata('flash_wo-input'); ?>"></div>
                                                 <div class="form-group" style="width: 40%;">
                                                     <label>Pilih Mesin</label>
                                                     <select name="idmesin" class="form-control select2bs4">
@@ -115,7 +116,7 @@
                                                     </div>
                                                     <small class="form-text text-danger"><?php echo form_error('tgl_input'); ?></small>
                                                 </div>
-                                                <button type="button" class="btn btn-primary" onclick="stepper.next()">Next</button>
+                                                <button type="button" class="btn btn-primary" id="tombol">Next</button>
                                                 <!-- Container-Fluid -->
                                             </div>
                                         </div>

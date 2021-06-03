@@ -63,9 +63,10 @@ class Workorder extends CI_Controller
             $this->load->view('vpages/wo_input', $data);
             $this->load->view('vtemplate/footer');
         } else {
-            $this->Workorder_model->inputDataWo();
+            $this->session->set_flashdata('flash_wo-input', 'Di input');
+            //$this->Workorder_model->inputDataWo();
             //$this->session->set_flashdata('flash', 'Ditambahkan');
-            redirect('home');
+            redirect('workorder/input');
         }
     }
 

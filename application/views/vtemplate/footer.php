@@ -18,6 +18,12 @@
 
     <!-- jQuery -->
     <script src="<?php echo base_url(); ?>assets/plugins/jquery/jquery.min.js"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="<?php echo base_url(); ?>assets/plugins/jquery-ui/jquery-ui.min.js"></script>
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <script>
+      $.widget.bridge('uibutton', $.ui.button)
+    </script>
     <!-- Bootstrap 4 -->
     <script src="<?php echo base_url(); ?>assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- Select2 -->
@@ -44,12 +50,14 @@
     <script src="<?php echo base_url(); ?>assets/plugins/summernote/summernote-bs4.min.js"></script>
     <!-- overlayScrollbars -->
     <script src="<?php echo base_url(); ?>assets/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
-    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-    <script src="<?php echo base_url(); ?>assets/js/pages/dashboard.js"></script>
     <!-- AdminLTE App -->
     <script src="<?php echo base_url(); ?>assets/js/adminlte.min.js"></script>
     <!-- AdminLTE for demo purposes -->
     <script src="<?php echo base_url(); ?>assets/js/demo.js"></script>
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+    <script src="<?php echo base_url(); ?>assets/js/pages/dashboard.js"></script>
+    <!-- SweetAlert2 -->
+    <script src="<?php echo base_url(); ?>assets/plugins/sweetalert2/sweetalert2.min"></script>
     <!-- MyScript -->
     <script src="<?php echo base_url(); ?>assets/js/myscript.js"></script>
     </body>
