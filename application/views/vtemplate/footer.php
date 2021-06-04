@@ -56,8 +56,6 @@
     <script src="<?php echo base_url(); ?>assets/js/demo.js"></script>
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
     <script src="<?php echo base_url(); ?>assets/js/pages/dashboard.js"></script>
-    <!-- SweetAlert2 -->
-    <script src="<?php echo base_url(); ?>assets/plugins/sweetalert2/sweetalert2.min"></script>
     <!-- MyScript -->
     <script src="<?php echo base_url(); ?>assets/js/myscript.js"></script>
     </body>

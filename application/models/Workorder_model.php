@@ -39,6 +39,14 @@ class Workorder_model extends CI_model
         $this->db->insert('doc_wo', $data);
     }
 
+    public function getLastIdWo()
+    {
+        $this->db->select_max('id_no');
+        $query = $this->db->get('doc_wo')->row_array();
+        return $query;
+        // $query = $this->db->get('my_table', 2);
+    }
+
     public function hapusDataWorkorder($id)
     {
         // $this->db->where('id', $id);

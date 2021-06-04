@@ -14,21 +14,21 @@
                                     <div class="bs-stepper-header" role="tablist">
                                         <!-- your steps here -->
                                         <div class="step" data-target="#step-1">
-                                            <button type="button" class="step-trigger" role="tab" aria-controls="step-1" id="step-1-trigger">
+                                            <button type="button" class="step-trigger disabled" role="tab" aria-controls="step-1" id="step-1-trigger">
                                                 <span class="bs-stepper-circle">1</span>
                                                 <span class="bs-stepper-label">Data Mesin</span>
                                             </button>
                                         </div>
                                         <div class="line"></div>
                                         <div class="step" data-target="#step-2">
-                                            <button type="button" class="step-trigger" role="tab" aria-controls="step-2" id="step-2-trigger">
+                                            <button type="button" class="step-trigger disabled" role="tab" aria-controls="step-2" id="step-2-trigger">
                                                 <span class="bs-stepper-circle">2</span>
                                                 <span class="bs-stepper-label">Data PIC</span>
                                             </button>
                                         </div>
                                         <div class="line"></div>
                                         <div class="step" data-target="#step-3">
-                                            <button type="button" class="step-trigger" role="tab" aria-controls="step-3" id="step-3-trigger">
+                                            <button type="button" class="step-trigger disabled" role="tab" aria-controls="step-3" id="step-3-trigger">
                                                 <span class="bs-stepper-circle">3</span>
                                                 <span class="bs-stepper-label">Progress</span>
                                             </button>
@@ -116,7 +116,7 @@
                                                     </div>
                                                     <small class="form-text text-danger"><?php echo form_error('tgl_input'); ?></small>
                                                 </div>
-                                                <button type="button" class="btn btn-primary" id="tombol">Next</button>
+                                                <button type="button" class="btn btn-primary" onclick="stepper.next()">Next</button>
                                                 <!-- Container-Fluid -->
                                             </div>
                                         </div>
@@ -293,7 +293,7 @@
                                                     <small class="form-text text-danger"><?php echo form_error('txtditerima'); ?></small>
                                                 </div>
                                                 <button type="button" class="btn btn-primary" onclick="stepper.previous()">Previous</button>
-                                                <button type="submit" class="btn btn-primary">Submit</button>
+                                                <button type="submit" class="btn btn-success">Submit</button>
                                             </div>
                                         </div>
                                     </div>

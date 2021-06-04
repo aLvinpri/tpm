@@ -15,6 +15,7 @@ class Workorder extends CI_Controller
         $data['activelink'] = 'Input Work Order';
         $data['pilihmesin'] = $this->Workorder_model->getPilihMesin();
         $data['pilihmaintenance'] = $this->Workorder_model->getPilihMaintenance();
+        $data['doc_wo'] = $this->Workorder_model->getLastIdWo();
 
         $this->form_validation->set_rules('idmesin', '', 'required', array('required' => 'Belum di pilih'));
         $this->form_validation->set_rules('txtbag', '', 'required', array('required' => 'Belum di pilih'));
@@ -63,9 +64,8 @@ class Workorder extends CI_Controller
             $this->load->view('vpages/wo_input', $data);
             $this->load->view('vtemplate/footer');
         } else {
-            $this->session->set_flashdata('flash_wo-input', 'Di input');
-            //$this->Workorder_model->inputDataWo();
-            //$this->session->set_flashdata('flash', 'Ditambahkan');
+            $this->session->set_flashdata('flash_wo-input', 'WO Telah Di input');
+            $this->Workorder_model->inputDataWo();
             redirect('workorder/input');
         }
     }

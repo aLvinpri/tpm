@@ -34,10 +34,10 @@
                   <div class="card-footer">
                     <div class="text-right">
                       <a href="<?php echo base_url(); ?>assets/pdf/User-Guidence.pdf" target="_blank" class="btn btn-sm bg-teal">
-                        <i class="fas fa-comments"></i> Baca Online
+                        <i class="fas fa-book-open"></i> Baca Online
                       </a>
                       <a href="<?php echo base_url('pages/download/User-Guidence.pdf'); ?>" class="btn btn-sm btn-primary">
-                        <i class="fas fa-user"></i> View Profile
+                        <i class="fas fa-file-download"></i> Download
                       </a>
                     </div>
                   </div>
@@ -65,10 +65,10 @@
                   <div class="card-footer">
                     <div class="text-right">
                       <a href="<?php echo base_url(); ?>assets/pdf/Documentation-System.pdf" target="_blank" class="btn btn-sm bg-teal">
-                        <i class="fas fa-comments"></i> Baca Online
+                        <i class="fas fa-book-open"></i> Baca Online
                       </a>
                       <a href="<?php echo base_url('pages/download/Documentation-System.pdf'); ?>" class="btn btn-sm btn-primary">
-                        <i class="fas fa-user"></i> View Profile
+                        <i class="fas fa-file-download"></i> Download
                       </a>
                     </div>
                   </div>
@@ -96,10 +96,10 @@
                   <div class="card-footer">
                     <div class="text-right">
                       <a href="<?php echo base_url(); ?>assets/pdf/Work-Order.pdf" class="btn btn-sm bg-teal">
-                        <i class="fas fa-comments"></i> Baca Online
+                        <i class="fas fa-book-open"></i> Baca Online
                       </a>
                       <a href="<?php echo base_url('pages/download/Work-Order.pdf'); ?>" class="btn btn-sm btn-primary">
-                        <i class="fas fa-user"></i> View Profile
+                        <i class="fas fa-file-download"></i> Download
                       </a>
                     </div>
                   </div>
