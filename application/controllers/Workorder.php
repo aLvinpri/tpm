@@ -82,6 +82,7 @@ class Workorder extends CI_Controller
 
         $data['txtpermasalahan'] = $this->input->post('txtpermasalahan');
         $data['tgl_input'] = $this->input->post('tgl_input');
+        $data['txtditerima'] = $this->input->post('txtditerima');
 
         if ($this->form_validation->run() == false) {
             $this->load->view('vtemplate/header', $data);
