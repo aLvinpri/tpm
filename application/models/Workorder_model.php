@@ -47,6 +47,13 @@ class Workorder_model extends CI_model
         // $query = $this->db->get('my_table', 2);
     }
 
+    public function getPilihWo()
+    {
+        $this->db->select('id_no');
+        $this->db->order_by('id_no', 'DESC');
+        return $this->db->get('doc_wo')->result_array();
+    }
+
     public function hapusDataWorkorder($id)
     {
         // $this->db->where('id', $id);

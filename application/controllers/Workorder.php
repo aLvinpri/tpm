@@ -74,10 +74,25 @@ class Workorder extends CI_Controller
     {
         $data['judul'] = 'TPM - Input Pengerjaan WO';
         $data['activelink'] = 'Input Pengerjaan Work Order';
-        $this->load->view('vtemplate/header', $data);
-        $this->load->view('vtemplate/navbar');
-        $this->load->view('vtemplate/sidebar', $data);
-        $this->load->view('vpages/wo_pengerjaan', $data);
-        $this->load->view('vtemplate/footer');
+        $data['pilihwo'] = $this->Workorder_model->getPilihWo();
+
+        $this->form_validation->set_rules('tgl_input', '', 'required', array('required' => 'Belum di pilih'));
+        $this->form_validation->set_rules('txtpermasalahan', '', 'required', array('required' => 'Belum di isi'));
+
+
+        $data['txtpermasalahan'] = $this->input->post('txtpermasalahan');
+        $data['tgl_input'] = $this->input->post('tgl_input');
+
+        if ($this->form_validation->run() == false) {
+            $this->load->view('vtemplate/header', $data);
+            $this->load->view('vtemplate/navbar');
+            $this->load->view('vtemplate/sidebar', $data);
+            $this->load->view('vpages/wo_pengerjaan', $data);
+            $this->load->view('vtemplate/footer');
+        } else {
+            $this->session->set_flashdata('flash_wo-input', 'WO Telah Di input');
+            $this->Workorder_model->inputDataWo();
+            redirect('workorder/input');
+        }
     }
 }

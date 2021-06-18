@@ -1,22 +1,43 @@
 $(function () {
+
   //Date and time picker
+
+  // WO Input
   $('#reservationdatetime').datetimepicker({
     icons: { time: 'far fa-clock'},
     format: 'YYYY-MM-DD HH:mm:ss'
     });
   
-  //Date and time picker
   $('#reservationdatetime2').datetimepicker({
     icons: { time: 'far fa-clock'},
     format: 'YYYY-MM-DD HH:mm:ss'
     });
 
-  //Date and time picker
   $('#reservationdatetime3').datetimepicker({
     icons: { time: 'far fa-clock'},
     format: 'YYYY-MM-DD HH:mm:ss'
     });
 
+    // WO Pengerjaan
+  $('#reservationdatetime4').datetimepicker({
+    format: 'YYYY-MM-DD'
+    });
+
+  $('#reservationdatetime5').datetimepicker({
+    format: 'HH:mm:ss'
+    });
+
+  $('#reservationdatetime6').datetimepicker({
+    format: 'HH:mm:ss'
+    });
+
+  $('#reservationdatetime7').datetimepicker({
+    format: 'HH:mm:ss'
+    });
+
+  $('#reservationdatetime8').datetimepicker({
+    format: 'HH:mm:ss'
+    });
 });
 // BS-Stepper Init
 document.addEventListener('DOMContentLoaded', function () {
