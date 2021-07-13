@@ -1,10 +1,10 @@
 <?php
 class Lihatdata_model extends CI_model
 {
-    public function getPilihMesin()
+    public function getSparepart()
     {
-        $this->db->select('id_mesin, nm_mesin, no_urut');
-        $this->db->order_by('id_mesin', 'ASC');
-        return $this->db->get('mesin')->result_array();
+        $this->db->select('*');
+        $this->db->order_by('id_part', 'ASC');
+        return $this->db->get('part')->result_array();
     }
 }

@@ -38,7 +38,7 @@ class Lihatdata extends CI_Controller
     {
         $data['judul'] = 'TPM - Lihat Data Spare Part';
         $data['activelink'] = 'Lihat Data Spare Part';
-        $data['pilihmesin'] = $this->Lihatdata_model->getPilihMesin();
+        $data['sparepart'] = $this->Lihatdata_model->getSparepart();
 
         $this->form_validation->set_rules('idmesin', '', 'required', array('required' => 'Belum di pilih'));
         $this->form_validation->set_rules('no', '', 'required', array('required' => 'Belum di isi'));
