@@ -15,8 +15,6 @@ class Master extends CI_Controller
         $data['judul'] = 'TPM - Input Mesin';
         $data['activelink'] = 'Input Mesin';
         $data['pilihmesin'] = $this->Master_model->getPilihMesin();
-        $data['pilihmaintenance'] = $this->Master_model->getPilihMaintenance();
-        $data['doc_wo'] = $this->Master_model->getLastIdWo();
 
         $this->form_validation->set_rules('idmesin', '', 'required', array('required' => 'Belum di pilih'));
         $this->form_validation->set_rules('no', '', 'required', array('required' => 'Belum di isi'));
@@ -41,8 +39,6 @@ class Master extends CI_Controller
         $data['judul'] = 'TPM - Input Spare Part';
         $data['activelink'] = 'Input Spare Part';
         $data['pilihmesin'] = $this->Master_model->getPilihMesin();
-        $data['pilihmaintenance'] = $this->Master_model->getPilihMaintenance();
-        $data['doc_wo'] = $this->Master_model->getLastIdWo();
 
         $this->form_validation->set_rules('idmesin', '', 'required', array('required' => 'Belum di pilih'));
         $this->form_validation->set_rules('no', '', 'required', array('required' => 'Belum di isi'));

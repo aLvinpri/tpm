@@ -145,11 +145,11 @@
           </li>
           <!-- ***** Menu 4 ***** -->
           <li class="nav-item
-          <?php if ($activelink == "Input Mesin" | $activelink == "Input Spare Part") {
+          <?php if ($activelink == "Edit Data Mesin" | $activelink == "Edit Data Spare Part") {
             echo ' menu-open';
           } ?>">
             <a href="#" class="nav-link 
-            <?php if ($activelink == "Input Mesin" | $activelink == "Input Spare Part") {
+            <?php if ($activelink == "Edit Data Mesin" | $activelink == "Edit Data Spare Part") {
               echo ' active';
             } ?>">
               <i class="nav-icon fas fa-pen-fancy"></i>
@@ -160,47 +160,41 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="<?php echo base_url(); ?>master/inputMesin" class="nav-link
-                <?php if ($activelink == "Input Mesin") {
+                <a href="<?php echo base_url(); ?>editdata/Mesin" class="nav-link
+                <?php if ($activelink == "Edit Data Mesin") {
                   echo ' active';
                 } ?>">
                   <i class="fas fa-caret-right nav-icon"></i>
-                  <p>Input Mesin</p>
+                  <p>Edit Data Mesin</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="<?php echo base_url(); ?>master/inputSparepart" class="nav-link
-                <?php if ($activelink == "Input Spare Part") {
+                <a href="<?php echo base_url(); ?>editdata/Sparepart" class="nav-link
+                <?php if ($activelink == "Edit Data Spare Part") {
                   echo ' active';
                 } ?>">
                   <i class="fas fa-caret-right nav-icon"></i>
-                  <p>Input Spare Part</p>
+                  <p>Edit Data Spare Part</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="<?php echo base_url(); ?>master/#" class="nav-link">
                   <i class="fas fa-caret-right nav-icon"></i>
-                  <p>Input Pegawai</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="<?php echo base_url(); ?>master/#" class="nav-link">
-                  <i class="fas fa-caret-right nav-icon"></i>
-                  <p>Registrasi</p>
+                  <p>Edit Data WO</p>
                 </a>
               </li>
             </ul>
           </li>
           <!-- ***** Menu 5 ***** -->
           <li class="nav-item
-          <?php if ($activelink == "Input Mesin" | $activelink == "Input Spare Part") {
+          <?php if ($activelink == "Import Data Mesin" | $activelink == "Import Data Spare Part") {
             echo ' menu-open';
           } ?>">
             <a href="#" class="nav-link 
-            <?php if ($activelink == "Input Mesin" | $activelink == "Input Spare Part") {
+            <?php if ($activelink == "Import Data Mesin" | $activelink == "Import Data Spare Part") {
               echo ' active';
             } ?>">
-              <i class="nav-icon fas fa-file-import"></i>
+              <i class="nav-icon fas fa-pen-fancy"></i>
               <p class="font-weight-bold">
                 Import Data
                 <i class="right fas fa-angle-left"></i>
@@ -208,44 +202,32 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="<?php echo base_url(); ?>master/inputMesin" class="nav-link
-                <?php if ($activelink == "Input Mesin") {
+                <a href="<?php echo base_url(); ?>importdata/Mesin" class="nav-link
+                <?php if ($activelink == "Import Data Mesin") {
                   echo ' active';
                 } ?>">
                   <i class="fas fa-caret-right nav-icon"></i>
-                  <p>Input Mesin</p>
+                  <p>Import Data Mesin</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="<?php echo base_url(); ?>master/inputSparepart" class="nav-link
-                <?php if ($activelink == "Input Spare Part") {
+                <a href="<?php echo base_url(); ?>importdata/Sparepart" class="nav-link
+                <?php if ($activelink == "Import Data Spare Part") {
                   echo ' active';
                 } ?>">
                   <i class="fas fa-caret-right nav-icon"></i>
-                  <p>Input Spare Part</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="<?php echo base_url(); ?>master/#" class="nav-link">
-                  <i class="fas fa-caret-right nav-icon"></i>
-                  <p>Input Pegawai</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="<?php echo base_url(); ?>master/#" class="nav-link">
-                  <i class="fas fa-caret-right nav-icon"></i>
-                  <p>Registrasi</p>
+                  <p>Import Data Spare Part</p>
                 </a>
               </li>
             </ul>
           </li>
           <!-- ***** Menu 6 ***** -->
           <li class="nav-item
-          <?php if ($activelink == "Input Mesin" | $activelink == "Input Spare Part") {
+          <?php if ($activelink == "Lihat Data Mesin" | $activelink == "Lihat Data Spare Part" | $activelink == "Lihat Data Pegawai") {
             echo ' menu-open';
           } ?>">
             <a href="#" class="nav-link 
-            <?php if ($activelink == "Input Mesin" | $activelink == "Input Spare Part") {
+            <?php if ($activelink == "Lihat Data Mesin" | $activelink == "Lihat Data Spare Part" | $activelink == "Lihat Data Pegawai") {
               echo ' active';
             } ?>">
               <i class="nav-icon fas fa-eye"></i>
@@ -256,33 +238,30 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="<?php echo base_url(); ?>master/inputMesin" class="nav-link
-                <?php if ($activelink == "Input Mesin") {
+                <a href="<?php echo base_url(); ?>lihatdata/Mesin" class="nav-link
+                <?php if ($activelink == "Lihat Data Mesin") {
                   echo ' active';
                 } ?>">
                   <i class="fas fa-caret-right nav-icon"></i>
-                  <p>Input Mesin</p>
+                  <p>Lihat Data Mesin</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="<?php echo base_url(); ?>master/inputSparepart" class="nav-link
-                <?php if ($activelink == "Input Spare Part") {
+                <a href="<?php echo base_url(); ?>lihatdata/Sparepart" class="nav-link
+                <?php if ($activelink == "Lihat Data Spare Part") {
                   echo ' active';
                 } ?>">
                   <i class="fas fa-caret-right nav-icon"></i>
-                  <p>Input Spare Part</p>
+                  <p>Lihat Data Spare Part</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="<?php echo base_url(); ?>master/#" class="nav-link">
+                <a href="<?php echo base_url(); ?>lihatdata/Pegawai" class="nav-link
+                <?php if ($activelink == "Lihat Data Pegawai") {
+                  echo ' active';
+                } ?>">
                   <i class="fas fa-caret-right nav-icon"></i>
-                  <p>Input Pegawai</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="<?php echo base_url(); ?>master/#" class="nav-link">
-                  <i class="fas fa-caret-right nav-icon"></i>
-                  <p>Registrasi</p>
+                  <p>Lihat Data Pegawai</p>
                 </a>
               </li>
             </ul>
