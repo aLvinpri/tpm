@@ -29,8 +29,8 @@
                                                     </thead>
                                                     <tbody>
                                                         <?php
-                                                        // require_once $_SERVER['DOCUMENT_ROOT'] . '/assets/qrcode/phpqrcode/qrlib.php';
-                                                        require_once('qrcode/phpqrcode/qrlib.php');
+                                                        require_once $_SERVER['DOCUMENT_ROOT'] . '/assets/qrcode/phpqrcode/qrlib.php';
+                                                        // require_once('qrcode/phpqrcode/qrlib.php');
                                                         // header('Cache-Control: no-cache, no-store, max-age=0, must-revalidate'); //clear cache chrome
                                                         $no = 0;
                                                         foreach ($sparepart as $part) :
@@ -39,9 +39,10 @@
                                                             $nm_part = $part['nm_part'];
                                                             $stok = $part['stok'];
                                                             $deskripsi = $part['deskripsi'];
+
                                                             //QR Code
-                                                            /* $tempDir = BASE_URL() . "assets/qrcode/pdfqrcodes/"; */
-                                                            $tempDir = 'qrcode/pdfqrcodes/';
+                                                            $tempDir = BASE_URL() . "assets/qrcode/pdfqrcodes/";
+                                                            // $tempDir = 'qrcode/pdfqrcodes/';
                                                             $codeContents = 'ID= ' .
                                                                 $id_part . PHP_EOL . PHP_EOL .
                                                                 'Sparepart= ' . $nm_part . PHP_EOL . PHP_EOL .
@@ -69,7 +70,7 @@
                                                                             <div class="row mx-auto">
                                                                                 <div class="col">
                                                                                     <center>
-                                                                                        <img src='pdfqrcodes/<?php echo "" ?>.png' class="img-fluid">
+                                                                                        <img src='<?php echo $params ?>' class="img-fluid">
                                                                                     </center>
                                                                                 </div>
                                                                             </div>
