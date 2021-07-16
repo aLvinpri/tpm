@@ -30,8 +30,6 @@
                                                     <tbody>
                                                         <?php
                                                         require_once $_SERVER['DOCUMENT_ROOT'] . '/assets/qrcode/phpqrcode/qrlib.php';
-                                                        // require_once('qrcode/phpqrcode/qrlib.php');
-                                                        // header('Cache-Control: no-cache, no-store, max-age=0, must-revalidate'); //clear cache chrome
                                                         $no = 0;
                                                         foreach ($sparepart as $part) :
                                                             $no++;
@@ -42,7 +40,6 @@
 
                                                             //QR Code
                                                             $tempDir = $_SERVER['DOCUMENT_ROOT'] . "/assets/qrcode/pdfqrcodes/";
-                                                            // $tempDir = 'qrcode/pdfqrcodes/';
                                                             $codeContents = 'ID= ' .
                                                                 $id_part . PHP_EOL . PHP_EOL .
                                                                 'Sparepart= ' . $nm_part . PHP_EOL . PHP_EOL .
@@ -63,7 +60,7 @@
                                                                 <td><?php echo $stok; ?></td>
                                                                 <td><?php echo $deskripsi; ?></td>
                                                                 <td>
-                                                                    <div class="row mx-auto w-50">
+                                                                    <div class="row mx-auto w-25">
                                                                         <div class="col border border-secondary px-0 bg-white">
                                                                             <!-- logo qrcode -->
                                                                             <img src='<?= base_url() ?>assets/img/logo-barcode.png' class="img-fluid mt-1">
@@ -78,7 +75,7 @@
                                                                     </div>
                                                                 </td>
                                                                 <form action="" method="post">
-                                                                    <td><a href="spare_part_detail.php?id=<?php echo "" ?>">detail</a></td>
+                                                                    <td><a href="<?= base_url('lihatdata/detailsparepart/' . $id_part) ?>">detail</a></td>
                                                                 </form>
                                                             </tr>
                                                         <?php endforeach; ?>

@@ -36,7 +36,7 @@ class Lihatdata extends CI_Controller
 
     public function Sparepart()
     {
-        // $this->load->library('qrcode/phpqrcode/qrlib');
+        header('Cache-Control: no-cache, no-store, max-age=0, must-revalidate'); //clear cache chrome
 
         $data['judul'] = 'TPM - Lihat Data Spare Part';
         $data['activelink'] = 'Lihat Data Spare Part';
@@ -58,6 +58,20 @@ class Lihatdata extends CI_Controller
             $this->Lihatdata_model->inputDataWo();
             redirect('lihat/input');
         }
+    }
+
+    public function detailSparepart($id)
+    {
+
+        $data['judul'] = 'TPM - Detail Spare Part';
+        $data['activelink'] = 'Detail Spare Part';
+        $data['detailsparepart'] = $this->Lihatdata_model->getDetailSparepart($id);
+
+        $this->load->view('vtemplate/header', $data);
+        $this->load->view('vtemplate/navbar');
+        $this->load->view('vtemplate/sidebar', $data);
+        $this->load->view('vpages/lihat_detailsparepart', $data);
+        $this->load->view('vtemplate/footer');
     }
 
     public function Pegawai()
