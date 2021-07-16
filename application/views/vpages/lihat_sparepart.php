@@ -41,7 +41,7 @@
                                                             $deskripsi = $part['deskripsi'];
 
                                                             //QR Code
-                                                            $tempDir = BASE_URL() . "assets/qrcode/pdfqrcodes/";
+                                                            $tempDir = $_SERVER['DOCUMENT_ROOT'] . "/assets/qrcode/pdfqrcodes/";
                                                             // $tempDir = 'qrcode/pdfqrcodes/';
                                                             $codeContents = 'ID= ' .
                                                                 $id_part . PHP_EOL . PHP_EOL .
@@ -66,11 +66,11 @@
                                                                     <div class="row mx-auto w-50">
                                                                         <div class="col border border-secondary px-0 bg-white">
                                                                             <!-- logo qrcode -->
-                                                                            <img src='images/logo-barcode.png' class="img-fluid mt-1">
+                                                                            <img src='<?= base_url() ?>assets/img/logo-barcode.png' class="img-fluid mt-1">
                                                                             <div class="row mx-auto">
                                                                                 <div class="col">
                                                                                     <center>
-                                                                                        <img src='<?php echo $params ?>' class="img-fluid">
+                                                                                        <img src='<?php echo base_url('assets/qrcode/pdfqrcodes/' . $id_part . '.png') ?>' class="img-fluid">
                                                                                     </center>
                                                                                 </div>
                                                                             </div>

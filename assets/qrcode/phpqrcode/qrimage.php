@@ -41,7 +41,6 @@
                     ImagePng($image);
                 }else{
                     ImagePng($image, $filename);
-					echo "Test";
                 }
             }
             
